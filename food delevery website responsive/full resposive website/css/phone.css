@@ -1,0 +1,45 @@
+
+/* navigation section  */
+#navbar{
+    flex-direction: column;
+
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 32px 18px;
+}
+/* home section area  */
+#home{
+    height: 280px;
+    padding: 2px 40px;
+ 
+
+}
+#home::before{
+    height: 280px;
+ 
+}
+#home p{
+    font-size: 327px;
+}
+#services{
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+/* clent section  */
+
+
+/* conatact section  */
+
+
+
+/* footer section */
+
+/* utility */
+
+.h-primary{
+    font-size:12px;
+
+}

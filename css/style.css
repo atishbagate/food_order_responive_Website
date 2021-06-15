@@ -1,0 +1,249 @@
+/* /css resat/ */
+*{
+    
+    margin: 0;
+    padding: 0;
+    /* opacity: 0.8; */
+}
+
+/* variables of css */
+.root{
+    --navbar-height:59px;
+   
+}
+
+/* navigation bar  */
+#navbar{
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: flex;
+    align-items: center;
+    /*this syntax used to transperent navbar*/
+    /* background-color: rgba(255,255,255,0.4); */
+    position: relative;
+    /* margin: -21px 7px 13px 1px;  */
+    /* opacity: 0.8; */
+}
+#navbar::before{
+    contain: "";
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+    }
+
+/*nav bar = logo and images */
+#logo{
+    margin: 4px 7px;
+
+}
+#logo img{
+    margin: 2px 4px;
+    height: 87px;
+
+}
+/*nav bar = list styling */
+
+#navbar ul{
+    display: flex;
+    /* font-size: 1.3rem; */    
+}
+
+
+#navbar ul li{
+    /* display: flex; */
+    /* color: white; */
+    list-style-type: none; /*list ke aage dot nahi ayenge*/
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color: rgba(17, 13, 13, 0.904);
+    display: block;
+    font-size: 25px;
+    padding: 5px 38px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+    color: lightyellow;
+    background-color:gray;
+    border-radius:20px;
+
+}
+
+
+/* home section */
+#home{
+    font-family: 'Syne Mono', monospace;
+    display: flex;
+    top :0;
+    left: 0;
+    flex-direction: column;
+    padding: 3px 53px;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.90; */
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/dish2.jpeg') no-repeat  center center/cover;
+    height: 270%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.70;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+    height: 490px;
+
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 46px;
+
+}
+#services .box {
+    display: block;
+    margin: 3px;
+    border: 2px solid red;
+    height: 320px;
+    padding: 13px;
+    border-radius: 23px;
+}
+
+   
+ #services .h-secondary{
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: block;
+    margin: auto;
+    text-align: center;
+} 
+
+#services .box img{
+    height: 185px;
+    display: block;
+    margin: auto;
+    
+}
+#services .box img{
+    height: 185px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    
+}
+
+/* utility classes */
+.h-primary{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 3.8rem;
+    padding: 16px 89px;
+    text-align: center;
+}
+/* .h-secondary{
+    font-size: 2.6rem;
+    padding: 12px;
+} */
+.btn {
+    font-size: 1.3rem;
+    color: mediumblue;
+    padding: 3px 14px;
+    border-radius: 27px;
+    margin: 5px 10px;
+    cursor: pointer; /*courser button per aaya toh  hand dikhega*/
+
+}
+
+/* clent section  */
+#client-section{
+    position: relative;
+    
+    
+}
+
+#clients{
+    font-family: 'Baloo Bhaina 2', cursive;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#clients{
+    padding: 150px;
+}
+#clients img{
+    height: 140px;
+    padding: 50px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../backg.jpeg")  no-repeat  center center/cover ;
+    padding: 200px;
+    width: 70%;
+    height: 20%;
+    z-index: -1;
+    opacity: 0.60;
+}
+
+/* contact section */
+#contact{
+    /* padding: 169px; */
+    position: relative;
+    text-align: center;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../contact\ \(2\).jpeg)no-repeat  center center/cover;
+    
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+}
+#contact{
+    padding-top: 238px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: 0.2rem;
+    border: 4px solid rebeccapurple;
+
+}
+#contact form{
+    width: 20%;
+}
+#contact label{
+    font-size: 2.3rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+footer{
+    text-align: center;
+    background: black;
+    color: wheat;
+    padding: 9px 20px;
+    z-index: -1;
+    opacity: 0.60;
+}
